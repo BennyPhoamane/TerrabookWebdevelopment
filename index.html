@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>List Your Property - Terabook</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: #d0d9d0;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .sidebar nav a {
+      display: block;
+      color: #000;
+      text-decoration: none;
+      padding: 10px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+    .sidebar nav a:hover {
+      font-weight: bold;
+    }
+    .main {
+      flex-grow: 1;
+      background: #fff;
+      padding: 30px;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar .info {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    .card a button {
+      background: #90a58d;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .card a button:hover {
+      background: #7a9478;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <nav>
+      <a href="#">🏠 Home</a>
+      <a href="#">📊 Analytics</a>
+      <a href="#">📝 Property</a>
+      <a href="#">💰 Finance</a>
+      <a href="#">❤️ Reviews</a>
+    </nav>
+    <div><a href="#">🚪 Log Out</a></div>
+  </div>
+  <div class="main">
+    <div class="top-bar">
+      <h1 class="logo">Tera<span style="color:green;">book</span> <span style="font-size:12px; border:1px solid green; color:green; border-radius:5px; padding:2px 5px;">business</span></h1>
+      <div class="info"><span>❓</span><span>👤</span></div>
+    </div>
+    <h2>List your Property</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/building.png" alt="Apartment">
+        <a href="form_apartment.html"><button>List your Apartment</button></a>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/hotel.png" alt="Hotel">
+        <a href="form_hotel.html"><button>List your Hotel</button></a>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/cottage.png" alt="Eco GuestHouse">
+        <a href="form_guesthouse.html"><button>List your Eco-GuestHouse</button></a>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/restaurant.png" alt="Restaurant">
+        <a href="form_restaurant.html"><button>List your Restaurant</button></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

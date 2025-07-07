@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List Your Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #446644;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #365b36;
+    }
+  </style>
+</head>
+<body>
+  <h2>List Your Restaurant</h2>
+  <form action="#" method="POST">
+    <label>Property Name</label><input type="text" name="property_name" required>
+    <label>Location</label><input type="text" name="location" required>
+    <label>Description</label><textarea name="description" rows="4" required></textarea>
+    <label>Price per Meal (ZAR)</label><input type="number" name="price" required>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
